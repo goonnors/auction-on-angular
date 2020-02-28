@@ -1,12 +1,21 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit  } from '@angular/core';
+import * as $ from 'jquery';
 @Component({
   selector: 'app-root',
-  template: `<h1>Hello {{ name }}</h1>`,
+  templateUrl: './app.component.html'
 })
-export class AppComponent {
-  name: string;
-  constructor() {
-    this.name = 'Angular 9';
+export class AppComponent implements OnInit {
+  title = 'Look jQuery Animation working in action!';
+
+  public ngOnInit()
+  {
+    $(document).ready(function(){
+      $("#hide").click(function(){
+        $("p").hide();
+      });
+      $("#show").click(function(){
+        $("p").show();
+      });
+    });
   }
 }
