@@ -138,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "auction-angular"
+  "defaultProject": "auction-angular",
+  "cli": {
+    "analytics": "48b6f8c2-83dd-44ce-b62a-4bb27bc225dd"
+  }
 }
