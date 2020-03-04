@@ -2,9 +2,9 @@ import {Component, ViewEncapsulation} from '@angular/core';
 import {Product, ProductService} from '../../services/product-service';
 
 @Component({
-  select: 'auction-application',
-  templateUrl: 'app/components/application/application.html',
-  styleUrls: ['app/components/application/application.css'],
+  selector: 'app-auction-application',
+  templateUrl: 'application.html',
+  styleUrls: ['application.css'],
   encapsulation: ViewEncapsulation.None
 })
 
