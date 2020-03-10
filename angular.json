@@ -19,7 +19,7 @@
           "options": {
             "outputPath": "dist/auction-angular",
             "index": "src/routing/index.html",
-            "main": "src/routing/main-navigate.ts",
+            "main": "src/routing/main-param.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
