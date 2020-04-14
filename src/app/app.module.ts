@@ -24,7 +24,7 @@ import { ProductItemComponent } from './components/product-item/product-item.com
     SearchComponent,
     StarsComponent,
     ProductDetailComponent,
-    HomeComponent,
+    HomeComponent
   ],
   providers: [ProductService, {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent],
