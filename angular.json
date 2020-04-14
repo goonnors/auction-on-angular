@@ -18,8 +18,8 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/auction-angular",
-            "index": "src/index.html",
-            "main": "src/main.ts",
+            "index": "src/routing/index.html",
+            "main": "src/routing/main-param.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
