@@ -13,6 +13,7 @@ import {MockProductComponent} from './components/mock-product/mock-product.compo
     RouterModule.forChild([
       {path: '', component: AppDiExamplesComponent}
     ])
-  ]
+  ],
+  providers: [{provide: 'IS_DEV_ENVIRONMENT', useValue: true}]
 })
 export default class DiExamplesModule { }
