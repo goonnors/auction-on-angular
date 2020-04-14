@@ -1,26 +1,15 @@
-<div class="jumbotron text-center">
-  <h1>My First Bootstrap Page</h1>
-  <p>Resize this responsive page to see the effect!</p>
-</div>
+<auction-navbar></auction-navbar>
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor..</p>
+    <div class="col-md-3">
+      <auction-search></auction-search>
     </div>
-    <div class="col-sm-4">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Column 3</h3>
-      <p>Lorem ipsum dolor..</p>
+
+    <div class="col-md-9">
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
 
-<p>If you click on the "Hide" button, I will disappear.</p>
-
-<button id="hide">Hide</button>
-<button id="show">Show</button>
+<auction-footer></auction-footer>

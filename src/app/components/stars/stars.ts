@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'auction-stars',
+  selector: 'app-stars',
   templateUrl: 'stars.html',
   styles: [` .starrating { color: #d17581 }`]
 })
