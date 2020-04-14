@@ -26,7 +26,7 @@ import { ProductItemComponent } from './components/product-item/product-item.com
     ProductDetailComponent,
     HomeComponent,
   ],
-  providers: [ProductService],
+  providers: [ProductService, {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
