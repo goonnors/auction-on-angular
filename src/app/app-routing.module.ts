@@ -5,12 +5,12 @@ import {ProductDetailComponent} from './components/product-detail/product-detail
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'products/:prodTitle', component: ProductDetailComponent},
+  {path: 'products/:productId', component: ProductDetailComponent},
   {path: 'di-examples', loadChildren: './di-examples/di-examples.module'}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {useHash: true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
