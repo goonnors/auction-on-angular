@@ -6,21 +6,8 @@ import {ProductService} from './services/product-service';
 import {ComponentsBoot} from './components-boot';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { StoreModule } from '@ngrx/store';
-import { CounterComponent } from './components/counter/counter.component';
-import { increment, decrement, reset } from './components/counter/counter.actions';
-import { createReducer, on } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
 
-export const initialState = 0;
-
-const _counterReducer = createReducer(initialState,
-  on(increment, state => state + 1),
-  on(decrement, state => state - 1),
-  on(reset, state => 0),
-);
-
-export function counterReducer(state, action) {
-  return _counterReducer(state, action);
-}
 
 
 @NgModule({
@@ -29,9 +16,10 @@ export function counterReducer(state, action) {
     ReactiveFormsModule,
     FormsModule,
     AppRoutingModule,
-    StoreModule.forRoot({ count: counterReducer })
+    StoreModule.forRoot({}),
+    EffectsModule.forRoot([])
   ],
-  declarations: [...ComponentsBoot, CounterComponent],
+  declarations: [...ComponentsBoot],
   providers: [ProductService],
   bootstrap: [AppComponent],
 })

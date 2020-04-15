@@ -2,12 +2,10 @@ import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {HomeComponent} from './components/home/home.component';
 import {ProductDetailComponent} from './components/product-detail/product-detail.component';
-import {CounterComponent} from './components/counter/counter.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'products/:productId', component: ProductDetailComponent},
-  {path: 'counter', component: CounterComponent},
   {path: 'di-examples', loadChildren: './di-examples/di-examples.module'},
   {path: 'observables', loadChildren: './observables/observables.module'},
   {path: 'pipes', loadChildren: './pipes/pipes.module'},
