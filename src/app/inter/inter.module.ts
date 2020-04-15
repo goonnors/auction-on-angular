@@ -7,18 +7,22 @@ import { InputPropertyBindingsComponent } from './components/input-property-bind
 import { PriceQouterComponent } from './components/price-qouter/price-qouter.component';
 import { OutputPropertyBindingComponent } from './components/output-property-binding/output-property-binding.component';
 import { MediatorComponent } from './components/mediator/mediator.component';
+import { ChildApiComponent } from './components/child-api/child-api.component';
+import { ParentComponent } from './components/parent/parent.component';
+import { ProjectionComponent } from './components/projection/projection.component';
 
 
 
 @NgModule({
-  declarations: [AppInterComponent, OrderComponent, InputPropertyBindingsComponent, PriceQouterComponent, OutputPropertyBindingComponent, MediatorComponent],
+  declarations: [AppInterComponent, OrderComponent, InputPropertyBindingsComponent, PriceQouterComponent, OutputPropertyBindingComponent, MediatorComponent, ChildApiComponent, ParentComponent, ProjectionComponent],
   imports: [
     CommonModule,
     RouterModule.forChild([
       {path: '', component: AppInterComponent},
       {path: 'inter-property-bindings', component: InputPropertyBindingsComponent},
       {path: 'output-property-bindings', component: OutputPropertyBindingComponent},
-      {path: 'mediator', component: MediatorComponent}
+      {path: 'mediator', component: MediatorComponent},
+      {path: 'child-api', component: ParentComponent}
     ])
   ]
 })

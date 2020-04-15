@@ -1,0 +1,8 @@
+<div class="child">
+  <h3>Child</h3>
+  <ng-content select=".header"></ng-content>
+  <ng-content></ng-content>
+  <div>Parent's property: {{parentProperty}}</div>
+  <span>{{ message }}</span>
+  <ng-content select=".footer"></ng-content>
+</div>
