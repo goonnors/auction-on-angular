@@ -4,7 +4,7 @@ import FooterComponent from './components/footer/footer';
 import NavbarComponent from './components/navbar/navbar';
 import {ProductItemComponent} from './components/product-item/product-item.component';
 import SearchComponent from './components/search/search';
-import StarsComponent from './components/stars/stars';
+import {StarsComponent} from './components/stars/stars.component';
 import {ProductDetailComponent} from './components/product-detail/product-detail.component';
 import {HomeComponent} from './components/home/home.component';
 import {FilterPipe} from './components/pipes/filter-pipe';
