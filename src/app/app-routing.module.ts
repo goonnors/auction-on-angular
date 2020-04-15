@@ -7,7 +7,8 @@ const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'products/:productId', component: ProductDetailComponent},
   {path: 'di-examples', loadChildren: './di-examples/di-examples.module'},
-  {path: 'observables', loadChildren: './observables/observables.module'}
+  {path: 'observables', loadChildren: './observables/observables.module'},
+  {path: 'pipes', loadChildren: './pipes/pipes.module'}
 ];
 
 @NgModule({
