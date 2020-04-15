@@ -1,0 +1,3 @@
+<h3>Using subject for emiting/subscribing to keyup and input events</h3>
+<input type="text" placeholder="Start typing"
+       (input)="mySubject.next($event)" (keyup)="myKeySubject.next($event)">
