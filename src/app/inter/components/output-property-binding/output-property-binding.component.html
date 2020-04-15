@@ -1,0 +1,4 @@
+<app-price-quoter (lastPrice)="priceQuoteHandler($event)"></app-price-quoter>
+<p>
+  Wrapper component received: {{stockSymbol}} {{price | currency:'USD':true:'1.2-2'}}
+</p>

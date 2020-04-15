@@ -1,0 +1,4 @@
+<input type="text" placeholder="Enter stock (e.g. AAPL)" (change)="onInputEvent($event)">
+<p>
+  <app-order-processor [stockSymbol]="stock" quantity="100"></app-order-processor>
+</p>
