@@ -1,1 +1,6 @@
-<strong>Inside PriceQouterComponent: {{stockSymbol}} {{price | currency:'USD':true:'1.2-2'}}</strong>
+<strong>
+  {{stockSymbol}}:
+  {{price | currency:'USD':true:'1.2-2'}}
+</strong>
+
+<input type="button" value="Buy" (click)="buyStocks($event)">
