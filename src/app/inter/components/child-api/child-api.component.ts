@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-child-api',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./child-api.component.scss']
 })
 export class ChildApiComponent implements OnInit {
+  @Input() name: string;
   message = '';
 
   constructor() { }

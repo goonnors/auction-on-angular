@@ -1,4 +1,4 @@
-import {Component, AfterViewInit, ViewChild} from '@angular/core';
+import {Component, AfterViewInit, ViewChild, QueryList, ViewChildren} from '@angular/core';
 import {ChildApiComponent} from '../child-api/child-api.component';
 
 @Component({
@@ -9,13 +9,20 @@ import {ChildApiComponent} from '../child-api/child-api.component';
 export class ParentComponent implements AfterViewInit {
   @ViewChild('child1')
   firstChild: ChildApiComponent;
+
+  @ViewChildren(ChildApiComponent)
+  allChildren: QueryList<ChildApiComponent>;
+
   todaysDate: string = new Date().toLocaleDateString();
-  parentProperty = 'value';
 
   constructor() { }
 
   ngAfterViewInit(): void {
     setTimeout(() => { this.firstChild.greet('Child 1'); });
+  }
+
+  greetAllChildren() {
+    this.allChildren.forEach(child => child.greet(child.name));
   }
 
 }

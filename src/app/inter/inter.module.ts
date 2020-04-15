@@ -14,7 +14,17 @@ import { ProjectionComponent } from './components/projection/projection.componen
 
 
 @NgModule({
-  declarations: [AppInterComponent, OrderComponent, InputPropertyBindingsComponent, PriceQouterComponent, OutputPropertyBindingComponent, MediatorComponent, ChildApiComponent, ParentComponent, ProjectionComponent],
+  declarations: [
+    AppInterComponent,
+    OrderComponent,
+    InputPropertyBindingsComponent,
+    PriceQouterComponent,
+    OutputPropertyBindingComponent,
+    MediatorComponent,
+    ChildApiComponent,
+    ParentComponent,
+    ProjectionComponent
+  ],
   imports: [
     CommonModule,
     RouterModule.forChild([

@@ -1,9 +1,11 @@
 <h1>Parent</h1>
-<app-child-api #child1>
+<app-child-api #child1 name="John">
   <div class="header">Child got this header from parent {{todaysDate}}</div>
   <div class="footer">Child got this footer from parent</div>
 </app-child-api>
-<app-child-api #child2>
+<app-child-api #child2 name="Mary">
   <div>Parent projects this div onto the child without selector</div>
 </app-child-api>
 <button (click)="child2.greet('child 2')">Invoke greet() on child 2</button>
+<br>
+<button (click)="greetAllChildren()">Invoke greet() on both children</button>
